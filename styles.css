@@ -1,0 +1,152 @@
+/* File: styles.css */
+:root {
+  --primary-blue: #007BFF;
+  --primary-green: #28A745;
+  --bg-color: #e8f5fa;
+  --card-hover-bg: #f0f9f4;
+  --header-text: #ffffff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: var(--bg-color);
+  color: #333;
+}
+.site-header {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--primary-blue);
+  color: var(--header-text);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.lang-switch {
+  margin-top: 0.5rem;
+}
+.lang-switch button {
+  background: none;
+  border: 1px solid var(--primary-green);
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: var(--primary-green);
+}
+.lang-switch .active {
+  background-color: var(--primary-green);
+  color: var(--header-text);
+}
+.filter-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  background-color: #fff;
+}
+.filter-nav button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+.filter-nav button:hover {
+  color: var(--primary-green);
+}
+.filter-nav .active {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.card:hover {
+  background-color: var(--card-hover-bg);
+  border-color: var(--primary-green);
+}
+.card.expanded {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.more-info {
+  display: none;
+  margin-top: 0.5rem;
+  background-color: #f9fff9;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.card.expanded .more-info {
+  display: block;
+}
+.card .star-rating {
+  margin-bottom: 0.5rem;
+}
+.card .star-rating i {
+  margin-right: 2px;
+}
+.card .info,
+.card a {
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  color: #333;
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.rating-input {
+  display: inline-block;
+  margin: 0.25rem 0;
+}
+.rating-input i {
+  cursor: pointer;
+  margin-right: 2px;
+  font-size: 1rem;        /* match your desired size */
+  color: #ccc;            /* grey by default when outline */
+  transition: color 0.2s;
+}
+.rating-input i.filled-star {
+  color: gold;            /* filled (solid) star color */
+}
+.rating-input i:hover {
+  /* This just ensures the hovered star itself is always gold, 
+     but filled-state on hover is driven by JS logic above. */
+  color: gold;
+}

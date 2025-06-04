@@ -1,0 +1,46 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busan Hospital Discovery</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 data-i18n="title">Busan Hospital Discovery</h1>
+    <p data-i18n="subtitle">Find the best hospitals and clinics across Busan.</p>
+    <div class="lang-switch">
+      <button id="en-btn" class="active">ENG</button>
+      <button id="ko-btn">KOR</button>
+    </div>
+  </header>
+
+  <nav class="filter-nav">
+    <button data-filter="All" class="active" data-i18n="filter.All">All</button>
+    <button data-filter="General" data-i18n="filter.General">General</button>
+    <button data-filter="Dental" data-i18n="filter.Dental">Dental</button>
+    <button data-filter="Orthopedic" data-i18n="filter.Orthopedic">Orthopedic</button>
+    <button data-filter="Emergency" data-i18n="filter.Emergency">Emergency</button>
+  </nav>
+
+  <main>
+    <section id="hospital-cards" class="cards-grid">
+      <!-- Cards will be injected here by script.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer">Emergency Hotline: 119 | Disclaimer: Information subject to change.</p>
+  </footer>
+
+  <!-- Data & Script -->
+  <script src="data/hospitals.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
