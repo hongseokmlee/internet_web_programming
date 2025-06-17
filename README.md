@@ -37,13 +37,13 @@ The app is designed to work fully in the browser without any backend service.
 
 ## Features Implemented Features Implemented
 
-- - Responsive card-based layout
-- - Filtering by hospital type
-- - Bilingual interface (ENG/KOR toggle)
-- - Interactive star-rating system (saved in localStorage)
-- - Embedded Google Maps in each card
-- - Expand/collapse card behavior
-- - Works on both desktop and mobile browsers
+- Responsive card-based layout
+- Filtering by hospital type
+- Bilingual interface (ENG/KOR toggle)
+- Interactive star-rating system (saved in localStorage)
+- Embedded Google Maps in each card
+- Expand/collapse card behavior
+- Works on both desktop and mobile browsers
 
 ---
 
