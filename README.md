@@ -83,5 +83,5 @@ The app is designed to work fully in the browser without any backend service.
 
 ## Links
 
-- - **GitHub Repository**: [https://github.com/hongseokmlee/internet_web_programming](https://github.com/hongseokmlee/internet_web_programming)  
-- - **Live Demo**: [https://hongseokmlee.github.io/internet_web_programming](https://hongseokmlee.github.io/internet_web_programming)  
+- **GitHub Repository**: [https://github.com/hongseokmlee/internet_web_programming](https://github.com/hongseokmlee/internet_web_programming)  
+- **Live Demo**: [https://hongseokmlee.github.io/internet_web_programming](https://hongseokmlee.github.io/internet_web_programming)  
