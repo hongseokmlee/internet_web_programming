@@ -6,7 +6,7 @@
 
 ---
 
-## Project Overview Project Overview
+## Project Overview
 
 This project is a **static web application** that helps users discover hospitals and clinics across Busan. The application allows users to:
 
@@ -20,7 +20,7 @@ The app is designed to work fully in the browser without any backend service.
 
 ---
 
-## Tools and Technologies Used Tools and Technologies Used
+## Tools and Technologies Used
 
 | Tool/Tech | Purpose |
 |-----------|---------|
@@ -47,7 +47,7 @@ The app is designed to work fully in the browser without any backend service.
 
 ---
 
-## Challenges Faced and Solutions Challenges Faced & Solutions
+## Challenges Faced & Solutions
 
 ### 1. **Interactive Star Rating**
 - **Challenge**: Getting hover/click behavior right while syncing with localStorage  
@@ -63,7 +63,7 @@ The app is designed to work fully in the browser without any backend service.
 
 ---
 
-## Limitations Limitations / What Didn’t Work
+## Limitations / What Didn’t Work
 
 - **No backend**: Ratings are only saved in localStorage and not synced across devices or sessions.
 - **Map embed performance**: Embedding Google Maps for every card increases page weight and load time, especially on mobile.
@@ -72,7 +72,7 @@ The app is designed to work fully in the browser without any backend service.
 
 ---
 
-## Future Improvements Future Improvements
+## Future Improvements
 
 - Add a backend (e.g. Firebase or Express + MongoDB) to store ratings persistently
 - Add a search bar to filter by hospital name or location
